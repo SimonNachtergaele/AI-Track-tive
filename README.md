@@ -15,6 +15,8 @@ You have to use the source code (.py). The source code can be opened using Spyde
 Before you can use it, you need to install some Python modules:
 ***opencv. https://docs.opencv.org/master/d0/db2/tutorial_macos_install.html
 ***pyqt https://pythonbasics.org/install-pyqt/
+***opencv-python-headless https://pypi.org/project/opencv-python-headless/
+
 
 The lay-out of the program looks a bit different but it should do it. 
   
