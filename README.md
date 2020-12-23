@@ -12,7 +12,10 @@ In order to start the program, just click on the AITracktivev1.7.exe file.
 
 MAC users:
 You have to use the source code (.py). The source code can be opened using Spyder IDE. (https://www.spyder-ide.org/)  
-Before you can use it, you need to install opencv. https://docs.opencv.org/master/d0/db2/tutorial_macos_install.html
+Before you can use it, you need to install some Python modules:
+***opencv. https://docs.opencv.org/master/d0/db2/tutorial_macos_install.html
+***pyqt https://pythonbasics.org/install-pyqt/
+
 The lay-out of the program looks a bit different but it should do it. 
   
 LINUX users:
@@ -24,8 +27,7 @@ New tutorial: coming soon!
 
 ***B. How to train your own Deep Neural Network?
 
-1. Convert the training images 
-I used for example 804x804px images. In order to resize the images I used ImageJ or Fiji (https://imagej.net/Downloads). I used process => Batch => Convert in order to convert the original 1608x1608px tiff files to a 804x804px jpeg format. 
+1. Convert the training images: I used for example 804x804px images. In order to resize the images I used ImageJ or Fiji (https://imagej.net/Downloads). I used process => Batch => Convert in order to convert the original 1608x1608px tiff files to a 804x804px jpeg format. 
 
 2. Install LabelImg and draw boxes around the tracks in the images 
 https://github.com/tzutalin/labelImg
