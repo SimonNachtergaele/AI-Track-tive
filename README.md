@@ -12,6 +12,8 @@ In order to start the program, just click on the AITracktivev1.7.exe file.
 
 MAC users:
 You have to use the source code (.py). The source code can be opened using Spyder IDE. (https://www.spyder-ide.org/)  
+Before you can use it, you need to install opencv. https://docs.opencv.org/master/d0/db2/tutorial_macos_install.html
+The lay-out of the program looks a bit different but it should do it. 
   
 LINUX users:
 Under construction
