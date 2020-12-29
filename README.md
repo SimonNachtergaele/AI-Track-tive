@@ -2,6 +2,8 @@
 
 [AI-Track-tive: free software for automated recognition and counting of surface semi-tracks using computer vision (Artificial Intelligence)](https://gchron.copernicus.org/preprints/gchron-2020-32/)
 
+![logo](/logo-01.png)
+
 # A. Obtaining the freeware AI-Track-tive software:
 ## Windows users
 The easiest option to run the code is by downloading the folder from Github and double-click the .exe file. 
@@ -17,7 +19,7 @@ You have to use the source code (.py) in a free Python-based IDE, for example Sp
 - [pyqt](https://pythonbasics.org/install-pyqt/)
 - [opencv-python-headless](https://pypi.org/project/opencv-python-headless/)
   
-## LINUX users
+## Linux users
 You have to open the source code (.py) in a free Python-based IDE, for example Thonny. 
 I had no problems using the software on a Raspberry Pi 4B with 4GB RAM (€50) using Linux, after installing the following Python packages.
 
