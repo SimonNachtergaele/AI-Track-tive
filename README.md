@@ -1,10 +1,8 @@
-![GitHub Logo](/logo-01.png)
+# Manual
 
 [AI-Track-tive: free software for automated recognition and counting of surface semi-tracks using computer vision (Artificial Intelligence)](https://gchron.copernicus.org/preprints/gchron-2020-32/)
 
-**Welcome!**
-
-# A. Obtaining the freeware AI-Track-tive software:* 
+# A. Obtaining the freeware AI-Track-tive software:
 ## Windows users
 The easiest option to run the code is by downloading the folder from Github and double-click the .exe file. 
 
@@ -49,7 +47,7 @@ During debugging I noticed that Windows uses typically "\" and Linux uses "/". T
 
 New version tutorial: coming soon! Hopefully somewhere in January 2021!
 
-# C. How to train your own Deep Neural Network?:
+# C. How to train your own Deep Neural Network?
 
 - Convert the training images: I used for example 804x804px images. In order to resize the images I used [ImageJ or Fiji](https://imagej.net/Downloads). I used process => Batch => Convert in order to convert the original 1608x1608px tiff files to a 804x804px jpeg format.
 
@@ -59,4 +57,4 @@ New version tutorial: coming soon! Hopefully somewhere in January 2021!
 
 - Execute the Google Colab notebook for some hours. Aim for 2000-3000 iterations. The iteration speed depends on the size of your images. From my experience it seems that from then on, the DNN is overtrained. 
 
-### If you have further questions or suggestions for this tutorial: e-mail me please Simon.Nachtergaele@UGent.be*
+### If you have further questions or suggestions for this tutorial: e-mail me please Simon.Nachtergaele@UGent.be
