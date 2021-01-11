@@ -34,7 +34,7 @@ To install the pandas:
 To install the opencv module
 ``` pip install opencv-python ```
 
-Using my ultra-cheap Raspberry Pi I noticed that the program didn't want to continue because opencv2 was not entirely well installed. I found some help on my favorite website (stackoverflow) and found that it's possible to solve this error with: 
+Using my ultra-cheap Raspberry Pi I noticed that the program didn't want to initiate because opencv2 was not entirely well installed. I found some help on my favorite website (stackoverflow) and found that it's possible to solve this error while executing the following code in the Linux command shell: 
 ```pip3 install opencv-python
 sudo apt-get install libcblas-dev
 sudo apt-get install libhdf5-dev
