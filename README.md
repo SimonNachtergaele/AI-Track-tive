@@ -5,8 +5,11 @@
 ![logo](/logo-01.png)
 
 ## A. Obtaining the freeware AI-Track-tive software
+### Download .exe file for Windows users
+[Click here to download the executable file (Windows users)](https://drive.google.com/file/d/1dMCyq_6mO6j-NBFOVhfruipyV9Ssc8nL/view?usp=sharing)
+
 ### Download Deep Neural Networks 
-[Clic here to download the Deep Neural Network for apatite](https://drive.google.com/file/d/1BxlqKlNSEpXzhBCoR_-P_cEwyhxSw833/view?usp=sharing)
+[Click here to download the Deep Neural Network for apatite](https://drive.google.com/file/d/1BxlqKlNSEpXzhBCoR_-P_cEwyhxSw833/view?usp=sharing)
 
 [Click here to download the Deep Neural Network for mica](https://drive.google.com/file/d/1FHB0UTmEpTOI_QKx_0Boa3VgudgOfJS9/view?usp=sharing)
 
