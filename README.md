@@ -8,11 +8,6 @@
 ### Download .exe file for Windows users
 [Click here to download the executable file (Windows users)](https://users.ugent.be/~smanacht/download_aitracktivev2.php)
 
-### Download Deep Neural Networks 
-[Click here to download the Deep Neural Network for apatite](https://drive.google.com/file/d/1BxlqKlNSEpXzhBCoR_-P_cEwyhxSw833/view?usp=sharing)
-
-[Click here to download the Deep Neural Network for mica](https://drive.google.com/file/d/1FHB0UTmEpTOI_QKx_0Boa3VgudgOfJS9/view?usp=sharing)
-
 ### Windows users
 The easiest option to run the code is by downloading the folder from Github and double-click the .exe file. 
 
