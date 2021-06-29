@@ -55,9 +55,11 @@ sudo apt-get install libqt4-test
 During debugging I noticed that Windows uses typically " \ " and Linux uses "/". This means that this needs to be changed because the software will give a bug.  
 
 ## B. How to use this program once it's downloadeded on my pc? 
+[Manual here](https://users.ugent.be/~smanacht/download_aitracktivev2.php)
 [Old version tutorial](https://www.youtube.com/watch?v=fSfit87vkrA&feature=youtu.be)
+[New short tutorial](https://www.youtube.com/watch?v=kW7TmHmI674) 
+[New long tutorial](https://youtu.be/CRr7B4TweHU) 
 
-New version tutorial: coming soon! Hopefully somewhere in January 2021!
 
 ## C. How to train your own Deep Neural Network (DNN)?
 
