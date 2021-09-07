@@ -91,7 +91,7 @@ logger.addHandler(ch)
 logger.info('\n starting the application')
 
 # change print statement to logger 
-#print = logger.info  #comment this if you want to print the console here 
+print = logger.info  #comment this if you want to print the console here 
 
 error=''
 
@@ -2129,21 +2129,21 @@ def adjust_gamma(image, gamma):
 # I am not using a secured version anymore
 # .... so the code is quite useless
 
-if right_key=='no':
-    root_fail_key = Tk()
-    #root_fail_key.iconbitmap('microscope.ico')
-    root_fail_key.title('Error')
+# if right_key=='no':
+#     root_fail_key = Tk()
+#     #root_fail_key.iconbitmap('microscope.ico')
+#     root_fail_key.title('Error')
 
-    h_1 = Label(root_fail_key, text="You filled in a wrong software key").pack()
-    h_2 = Label(root_fail_key, text="Ask Simon.Nachtergaele@UGent.be for a personal software key").pack()
+#     h_1 = Label(root_fail_key, text="You filled in a wrong software key").pack()
+#     h_2 = Label(root_fail_key, text="Ask Simon.Nachtergaele@UGent.be for a personal software key").pack()
         
-    def close_wrong_key():
-        root_fail_key.destroy()
+#     def close_wrong_key():
+#         root_fail_key.destroy()
     
-    quit_button_wrong_key = Button(root_fail_key,text = "Quit", command = close_wrong_key, cursor="hand2")
-    quit_button_wrong_key.pack()
-    shutdown_script = 1
-    root_fail_key.mainloop() 
+#     quit_button_wrong_key = Button(root_fail_key,text = "Quit", command = close_wrong_key, cursor="hand2")
+#     quit_button_wrong_key.pack()
+#     shutdown_script = 1
+#     root_fail_key.mainloop() 
     
 #==============================================================================
 # START THE LOOP FOR DPAR MEASUREMENT
