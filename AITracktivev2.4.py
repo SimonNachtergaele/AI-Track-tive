@@ -5462,10 +5462,9 @@ if live.get()==1 or live_mica.get()==1:
             
         # Look for the tracks
         RGB_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        print(('----'))
+        print(('shape of image is:'))
         print(image.shape[0])
         print(image.shape[1])
-        print(('----'))
 
         # Check if it's in focus
         #img_grey = cv2.imread(RGB_img,cv2.IMREAD_GRAYSCALE)
@@ -5475,8 +5474,9 @@ if live.get()==1 or live_mica.get()==1:
         #print(type(laplacian))
         #list_laplacians.append(laplacian)
 
-        print('blob is changed')        
+  
         blob = cv2.dnn.blobFromImage(RGB_img, 1.0/255.0, (416,416), [0,0,0], True, crop=False) #used to be 416,416 in stead of 608  #416x416 reaches 500 ms (2Hz)
+        print('blob is defined')      
         width = image.shape[1]
 
         height = image.shape[0]  
@@ -5529,6 +5529,7 @@ if live.get()==1 or live_mica.get()==1:
         # If it's apatite in which we need to search
         
         nms_threshold = 0.3 # NMS threshold apparently needs to be lower for yolov4tiny #used to be 0.6
+        print('nms threshold defined')
 
         # Apatite
         if live.get()==1:     
@@ -5570,11 +5571,13 @@ if live.get()==1 or live_mica.get()==1:
         import numpy as np
         import math
 
+        print('modules imported for heatmap')
+
         #DEFINE GRID SIZE AND RADIUS(h)
         grid_size=100
         h=100
 
-        if not len(x_tracks)==0:
+        if len(x_tracks)!=0:
                 
             #GETTING X,Y MIN AND MAX
             x_min=min(x_tracks)
@@ -5624,17 +5627,18 @@ if live.get()==1 or live_mica.get()==1:
                 intensity_list.append(intensity_row)
 
             #HEATMAP OUTPUT    
+            print('all')
             print(all)
             intensity=np.array(intensity_list)
-            plt.pcolormesh(x_mesh,y_mesh,intensity)
-            plt.plot(x_tracks,y_tracks,'ro')
+            #plt.pcolormesh(x_mesh,y_mesh,intensity,shading='auto') #shading='auto' to solve a potential bug in later releases of this module
+            #plt.plot(x_tracks,y_tracks,'ro')
             #plt.plot([min(y_tracks),max(x_tracks),max(y_tracks),min(y_tracks)])
-            plt.ylim(max(y_tracks),min(y_tracks))
+            #plt.ylim(max(y_tracks),min(y_tracks))
 
             # Statistical test for quadrant
 
             #source:  https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#randomness-clustering
-            from pointpats import distance_statistics, QStatistic, random, PointPattern
+            from pointpats import QStatistic, random, PointPattern
 
             points=zip(x_tracks,y_tracks)
 
@@ -5648,12 +5652,21 @@ if live.get()==1 or live_mica.get()==1:
                     print('chi is ... '+str(chi))
                     print('there is no evidence to reject the null hypothesis')
                 else:
-                    print(chi)
+                    print('chi is ... '+str(chi))
                     print('there is evidence to reject the null hypothesis')
 
                 # Zoning evaluation ends
+            # If there are no tracks
+            else:
+                print('not enough tracks')
+                chi='999999'
+                
+        # If there are no tracks seen
+        else: 
+            pass
 
         # Put efficiency information.
+        print('efficiancy information is calculated now')
         t, _ = net.getPerfProfile()
         label = 'Inference time: %.2f ms' % (t * 1000.0 / cv2.getTickFrequency())
 
@@ -5674,17 +5687,18 @@ if live.get()==1 or live_mica.get()==1:
         # cv2.putText(RGB_img, str(round(laplacian)), (100, 140), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 255, 0))      
 
         # Add number of tracks to a list 
-
         list_numberoftracks.append(number)
         
         # datetime object containing current date and time
+        print('declare date')
         now = datetime.now()
-        print("now =", now)
+        #print("now =", now)
         # dd/mm/YY H:M:S
         dt_string = now.strftime("%H:%M:%S.%f")
         list_time.append(dt_string)
 
         cv2.imshow(window_title, RGB_img)
+        print(' ')
 
         # Wait until there appears a new screen (after 1second minus the processing time) DOES NOT WORK
         # cycletime = float(1000.0)
